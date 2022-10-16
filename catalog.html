@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Интернет-магазин гаджетов "Девайс"</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -32,7 +33,7 @@
           </li>
         </ul>
 
-        <a class="navigation-item" href="catalog.html">
+        <a class="navigation-item catalog-navigation" href="catalog.html">
           Каталог товаров
         </a>
 
@@ -134,40 +135,40 @@
           </fieldset>
         </form>
 
-        <button class="button" type="submit">Показать</button>
+        <button class="show-button" type="submit">Показать</button>
 
         <h2 class="sorting-title">Сортировка:</h2>
 
         <select class="select-sorting" aria-label="Сортировка">
           <option value="popular">Популярное</option>
-          <option value="cheap">Дешёвое</option>
+          <option value="cheap" >Дешёвое</option>
         </select>
 
         <ul class="product-list">
           <li class="product-item">
             <a class="product-link" href="product.html">
-              <img class="product-image" src="images/jpeg/product-1-catalog.png" alt="Любительская селфи-палка"  width="360" height="380">
+              <img class="product-image" src="images/jpeg/product-1-catalog.jpg" alt="Любительская селфи-палка"  width="360" height="380">
               <h3 class="product-title">Любительская селфи-палка</h3>
             </a>
             <b class="product-card-price">500 ₽</b>
           </li>
           <li class="product-item">
             <a class="product-link" href="product.html">
-              <img class="product-image" src="images/jpeg/product-2-catalog.png" alt="Профессиональная селфи-палка" width="360" height="380">
+              <img class="product-image" src="images/jpeg/product-2-catalog.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
               <h3 class="product-title">Профессиональная селфи-палка</h3>
             </a>
             <b class="product-card-price">1500 ₽</b>
           </li>
           <li class="product-item">
             <a class="product-link" href="product.html">
-              <img class="product-image" src="images/jpeg/product-3-catalog.png" alt="Непотопляемая селфи-палка" width="360" height="380">
+              <img class="product-image" src="images/jpeg/product-3-catalog.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
               <h3 class="product-title">Непотопляемая селфи-палка</h3>
             </a>
             <b class="product-card-price">2500 ₽</b>
           </li>
           <li class="product-item">
             <a class="product-link" href="product.html">
-              <img class="product-image" src="images/jpeg/product-4-catalog.png" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+              <img class="product-image" src="images/jpeg/product-4-catalog.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
               <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
             </a>
             <b class="product-card-price">1500 ₽</b>
@@ -186,16 +187,16 @@
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link-number" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link-number" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link-number" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">15</a>
+            <a class="pagination-link-number" href="#">15</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
@@ -207,7 +208,7 @@
     </main>
 
     <footer class="page-footer">
-      <section>
+      <section class="footer-navigation">
         <h2 class="visually-hidden">Интернет-магазин гаджетов Девайс</h2>
         <a class="navigation-logo" href="index.html">
           <img class="page-header-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/svg/logo-footer.svg" width="145" height="36">
@@ -253,7 +254,6 @@
             </a>
           </li>
         </ul>
-        <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
       </section>
     </footer>
   </body>
