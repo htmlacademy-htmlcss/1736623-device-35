@@ -13,7 +13,7 @@
           <img class="page-header-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/content/main-logo.png" width="153" height="44">
         </a>
 
-        <form class="site-search" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="site-search-form navigation-item" action="https://echo.htmlacademy.ru/" method="post">
           <input type="search" name="site-search" placeholder="Поиск по сайту">
           <button class="button-search-on-site" type="submit"><span>Найти</span></button>
         </form>
@@ -22,7 +22,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item preend-element">
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
@@ -34,7 +34,7 @@
           Каталог товаров
         </a>
 
-        <ul class="navigation-list">
+        <ul class="navigation-list delivery-guarantees-contacts">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
           </li>
@@ -50,51 +50,54 @@
 
     <main class="main-index">
       <section class="slider-dron">
-        <h2 class="visually-hidden">Квадракоптер и его описание</h2>
-        <img class="slider-image" src="images/content/drone-slider-1.png" alt="Летающий дрон с камерой" width="560" height="560">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
+        <div class="slider">
+          <h2 class="visually-hidden">Квадракоптер и его описание</h2>
+          <img class="slider-image" src="images/content/drone-slider-1.png" alt="Летающий дрон с камерой" width="560" height="560">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
 
-        <ul class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-        </ul>
+          <ul class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ul>
+        </div>
 
-
-        <p class="slider-tagline">Порхает как бабочка,  жалит как пчела!</p>
-        <p class="drone-discription">
-Этот обычный, на первый взгляд, квадрокоптер оснащен
-мощным лазером, замаскированным под стандартную камеру.
-        </p>
-        <a href="#" class="more-about">Подробнее</a>
-        <ul class="list-info">
-          <li class="item-info"><p>
-            <p class="fly-range">800 м</p>
-            Дальность полета
-          </p></li>
-          <li class="item-info"><p>
-            <p class="damage-radius">50 м</p>
-            Радиус поражения
-          </p></li>
-        </ul>
+        <div class="slider-drone-discription">
+          <p class="slider-tagline">Порхает как бабочка,  жалит как пчела!</p>
+          <p class="drone-discription">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <a href="#" class="more-about">Подробнее</a>
+          <ul class="list-info">
+            <li class="item-info"><p>
+              <p class="fly-range">800 м</p>
+              Дальность полета
+            </p></li>
+            <li class="item-info"><p>
+              <p class="damage-radius">50 м</p>
+              Радиус поражения
+            </p></li>
+          </ul>
+        </div>
       </section>
+
 
       <section class="category-of-items">
         <h2 class="visually-hidden">Категории товара</h2>
@@ -111,16 +114,17 @@
       <section class="service-list">
         <h2 class="visually-hidden">Список услуг</h2>
         <ul class="services">
-          <li class="service active"><a href="#" class="service-item"><h3>Доставка</h3></a>
+          <li class="service-item active">
+            <a href="#" class="service-link"><h3>Доставка</h3></a>
+
             <h3 class="delivery-title">Доставка</h3>
             <p class="description-of-service">
-Мы с удовольствием доставим ваш товар прямо
-к вашему подъезду совершенно бесплатно! Ведь
-мы неплохо заработаем, поднимая его на ваш этаж.
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
           </li>
-          <li class="service"><a href="#" class="service-item"><h3>Гарантия</h3></a>
-          <li class="service"><a href="#" class="service-item"><h3>Кредит</h3></a>
+
+          <li class="service-item"><a href="#" class="service-link"><h3>Гарантия</h3></a>
+          <li class="service-item"><a href="#" class="service-link"><h3>Кредит</h3></a>
         </ul>
       </section>
 
@@ -129,6 +133,7 @@
         <a class="delivery-button">доставим редкий товар под заказ</a>
       </article>
 
+      <div class="info">
       <section class="about-us">
         <h2 class="about-us-title">О нас</h2>
         <p class="description-about-us">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -160,6 +165,8 @@
         <a href="#" class="write-to-us">Напишите нам</a>
       </section>
 
+      </div>
+
       <section class="newsletter-subscription">
         <h2 class="newsletter-subscription-titel">Подпишитесь на рассылку</h2>
         <p class="description-subscription">
@@ -179,15 +186,15 @@
     <footer class="page-footer">
       <section class="footer-navigation">
         <h2 class="visually-hidden">Интернет-магазин гаджетов Девайс</h2>
-        <a class="navigation-logo" href="#">
-          <img class="page-header-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/icons/logo-footer.svg" width="145" height="36">
+        <a class="navigation-logo-footer" href="#">
+          <img class="page-footer-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/icons/logo-footer.svg" width="145" height="36">
         </a>
 
-        <address class="contact-address">
+        <address class="contact-address-footer">
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
 
-        <ul class="navigation-list">
+        <ul class="navigation-list-footer">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
           </li>
