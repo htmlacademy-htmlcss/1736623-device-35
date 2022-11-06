@@ -30,20 +30,23 @@
           </li>
         </ul>
       </div>
-      <a class="navigation-item catalog-navigation" href="catalog.html">
-        Каталог товаров
-      </a>
-      <ul class="navigation-list delivery-guarantees-contacts">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Контракты</a>
-        </li>
-      </ul>
+
+      <div class="header-catalog-service">
+        <a class="navigation-item catalog-navigation" href="catalog.html">
+          Каталог товаров
+        </a>
+        <ul class="navigation-list delivery-guarantees-contacts">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контракты</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -109,18 +112,20 @@
     </section>
 
     <section class="service-list">
-      <h2 class="visually-hidden">Список услуг</h2>
-      <ul class="services">
-        <li class="service-item active"></li>
-          <a href="#" class="service-link"><h3>Доставка</h3></a>
-        <li class="service-item"><a href="#" class="service-link"><h3>Гарантия</h3></a></li>
-        <li class="service-item"><a href="#" class="service-link"><h3>Кредит</h3></a></li>
-      </ul>
-      <div class="service-description">
-        <h3 class="delivery-title">Доставка</h3>
-        <p class="description-of-service">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-        </p>
+      <div class="service-list-content">
+        <h2 class="visually-hidden">Список услуг</h2>
+        <ul class="services">
+          <li class="service-item service-item-active">
+            <a href="#" class="service-link">Доставка</a></li>
+          <li class="service-item"><a href="#" class="service-link">Гарантия</a></li>
+          <li class="service-item"><a href="#" class="service-link">Кредит</a></li>
+        </ul>
+        <div class="service-description">
+          <h3 class="delivery-title">Доставка</h3>
+          <p class="description-of-service">
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -183,50 +188,55 @@
 
   <footer class="page-footer">
     <div class="footer">
-    <section class="footer-navigation">
-      <h2 class="visually-hidden">Интернет-магазин гаджетов Девайс</h2>
-      <a class="navigation-logo-footer" href="#">
-        <img class="page-footer-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/icons/logo-footer.svg" width="145" height="36">
-      </a>
-      <address class="contact-address-footer">
-        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </address>
-      <ul class="navigation-list-footer">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Контракты</a>
-        </li>
-      </ul>
-      <address class="contact-address">
-        <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-      </address>
-    </section>
-    <section class="footer-social">
-      <h2 class="visually-hidden">Наши социальные сети</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="">Телеграм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="">Ютуб</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="">Твиттер</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-  </div>
+      <section class="footer-navigation">
+        <h2 class="visually-hidden">Интернет-магазин гаджетов Девайс</h2>
+
+        <a class="navigation-logo-footer" href="#">
+          <img class="page-footer-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/icons/logo-footer.svg" width="145" height="36">
+        </a>
+
+        <div class="footer-address-service">
+          <address class="contact-address-footer">
+            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          </address>
+          <ul class="navigation-list-footer">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контракты</a>
+            </li>
+          </ul>
+          <address class="contact-address">
+            <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          </address>
+        </div>
+      </section>
+
+      <section class="footer-social">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="">Ютуб</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </footer>
 </body>
 </html>
