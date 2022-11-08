@@ -14,20 +14,20 @@
       </a>
       <div class="search-user-menu">
         <form class="site-search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="search" name="site-search" placeholder="Поиск по сайту">
-          <button class="button-search-on-site" type="submit"><span>Найти</span></button>
+          <input type="search" class="search-input" name="site-search" placeholder="Поиск по сайту">
+          <button class="button-search-on-site" type="submit"><span class="button-search-text">Найти</span></button>
         </form>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Коля Петухов</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-exit">
             <a class="navigation-link" href="#">Выйти</a>
           </li>
           <li class="navigation-item navigation-comparison">
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-basket">
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
@@ -45,7 +45,7 @@
             <a class="navigation-link" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Контракты</a>
+            <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </div>
@@ -150,6 +150,10 @@
                 <option value="popular">Популярное</option>
                 <option value="cheap" >Дешёвое</option>
               </select>
+              <div class="arrows">
+                <svg class="arrow arrow-up" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 0 5.5 10H.5" fill="#000"/></svg>
+                <svg class="arrow arrow-down" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10 .5 0h11" fill="#000"/></svg>
+              </div>
             </div>
             <ul class="product-list">
               <li class="product-item">
@@ -240,14 +244,14 @@
             <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
           <ul class="navigation-list-footer">
-            <li class="navigation-item">
+            <li class="navigation-item-footer">
               <a class="navigation-link" href="#">Доставка</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item-footer">
               <a class="navigation-link" href="#">Гарантия</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Контракты</a>
+            <li class="navigation-item-footer">
+              <a class="navigation-link" href="#">Конракты</a>
             </li>
           </ul>
           <address class="contact-address">
@@ -260,18 +264,20 @@
         <h2 class="visually-hidden">Наши социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="">Телеграм</span>
+            <a class="button telegram-link" href="#">
+
+              <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="">Ютуб</span>
+            <a class="button youtube-link" href="#">
+              <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="">Твиттер</span>
+            <a class="button twitter-link" href="#">
+
+              <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
         </ul>
