@@ -14,36 +14,39 @@
       </a>
       <div class="search-user-menu">
         <form class="site-search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="search" name="site-search" placeholder="Поиск по сайту" class="search-input">
-          <button class="button-search-on-site" type="submit"><span>Найти</span></button>
+          <input type="search" class="search-input" name="site-search" placeholder="Поиск по сайту">
+          <button class="button-search-on-site" type="submit"><span class="button-search-text">Найти</span></button>
         </form>
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Войти</a>
+            <a class="navigation-link navigation-enter" href="#">Войти</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-comparison">
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-basket">
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
       </div>
-      <a class="navigation-item catalog-navigation" href="catalog.html">
-        Каталог товаров
-      </a>
-      <ul class="navigation-list delivery-guarantees-contacts">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Контракты</a>
-        </li>
-      </ul>
+
+      <div class="header-catalog-service">
+        <a class="navigation-item catalog-navigation" href="catalog.html">
+          Каталог товаров
+        </a>
+        <ul class="navigation-list delivery-guarantees-contacts">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -53,24 +56,35 @@
         <h2 class="visually-hidden">Квадракоптер и его описание</h2>
         <img class="slider-image" src="images/content/drone-slider-1.png" alt="Летающий дрон с камерой" width="560" height="560">
         <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
+          <svg width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000"/></svg>
+          <span class="visually-hidden slider-prev">Предыдущее фото</span>
         </button>
         <button class="slider-button slider-next" type="button">
+          <svg width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" fill="#000"/></svg>
           <span class="visually-hidden">Следующее фото</span>
         </button>
         <ul class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <svg height="20" width="20">
+                <circle cx="12" cy="12" r="6" stroke="black"  fill="black" />
+              </svg>
               <span class="visually-hidden">1 фото</span>
             </button>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
+              <svg height="20" width="20">
+                <circle cx="12" cy="12" r="6" stroke="black" stroke-width="2" fill="white"/>
+              </svg>
               <span class="visually-hidden">2 фото</span>
             </button>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
+              <svg height="20" width="20">
+                <circle cx="12" cy="12" r="6" stroke="black" stroke-width="2" fill="white"/>
+              </svg>
               <span class="visually-hidden">3 фото</span>
             </button>
           </li>
@@ -99,34 +113,38 @@
     <section class="category-of-items">
       <h2 class="visually-hidden">Категории товара</h2>
       <ul class="items-category">
-        <li class="item-category"><a href="#" class="category-link">Виртульная реальность</a></li>
-        <li class="item-category"><a href="#" class="category-link">Моноподы для селфи</a></li>
-        <li class="item-category"><a href="#" class="category-link">Экшн-камеры</a></li>
-        <li class="item-category"><a href="#" class="category-link">Фитнес-браслеты</a></li>
-        <li class="item-category"><a href="#" class="category-link">Умные часы</a></li>
-        <li class="item-category"><a href="#" class="category-link">Квадрокоптеры</a></li>
+        <li class="item-category virt-reality"><a href="#" class="category-link">Виртульная реальность</a></li>
+        <li class="item-category selfie-monopods"><a href="#" class="category-link">Моноподы для селфи</a></li>
+        <li class="item-category action-cameras"><a href="#" class="category-link">Экшн-камеры</a></li>
+        <li class="item-category fitnes-bracelet"><a href="#" class="category-link">Фитнес-браслеты</a></li>
+        <li class="item-category smart-watch"><a href="#" class="category-link">Умные часы</a></li>
+        <li class="item-category quadrocopters"><a href="#" class="category-link">Квадрокоптеры</a></li>
       </ul>
     </section>
 
     <section class="service-list">
-      <h2 class="visually-hidden">Список услуг</h2>
-      <ul class="services">
-        <li class="service-item active"></li>
-          <a href="#" class="service-link"><h3>Доставка</h3></a>
-        <li class="service-item"><a href="#" class="service-link"><h3>Гарантия</h3></a></li>
-        <li class="service-item"><a href="#" class="service-link"><h3>Кредит</h3></a></li>
-      </ul>
-      <div class="service-description">
-        <h3 class="delivery-title">Доставка</h3>
-        <p class="description-of-service">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-        </p>
+      <div class="service-list-content">
+        <h2 class="visually-hidden">Список услуг</h2>
+        <ul class="services">
+          <li class="service-item service-item-active">
+            <a href="#" class="service-link">Доставка</a></li>
+          <li class="service-item service-item-inactive"><a href="#" class="service-link">Гарантия</a></li>
+          <li class="service-item service-item-inactive"><a href="#" class="service-link">Кредит</a></li>
+        </ul>
+        <div class="service-description">
+          <h3 class="delivery-title">Доставка</h3>
+          <p class="description-of-service">
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+          </p>
+        </div>
       </div>
     </section>
 
     <article class="delivery-link">
-      <h2 class="visually-hidden">кнопка - доставим редкий товар под заказ</h2>
-      <a class="delivery-button">доставим редкий товар под заказ</a>
+      <div class="button-delivery">
+        <h2 class="visually-hidden">кнопка - доставим редкий товар под заказ</h2>
+        <a class="delivery-button">доставим редкий товар под заказ</a>
+      </div>
     </article>
 
     <div class="info">
@@ -172,7 +190,7 @@
           <form class="newsletter-subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="newsletter-button" type="submit">
-              <span class="send-button">Отправить</span>
+              <span class="send-button">Подписаться</span>
             </button>
           </form>
           <span class="this-is-free">Это бесплатно</span>
@@ -183,50 +201,57 @@
 
   <footer class="page-footer">
     <div class="footer">
-    <section class="footer-navigation">
-      <h2 class="visually-hidden">Интернет-магазин гаджетов Девайс</h2>
-      <a class="navigation-logo-footer" href="#">
-        <img class="page-footer-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/icons/logo-footer.svg" width="145" height="36">
-      </a>
-      <address class="contact-address-footer">
-        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </address>
-      <ul class="navigation-list-footer">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Контракты</a>
-        </li>
-      </ul>
-      <address class="contact-address">
-        <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-      </address>
-    </section>
-    <section class="footer-social">
-      <h2 class="visually-hidden">Наши социальные сети</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="">Телеграм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="">Ютуб</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="">Твиттер</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-  </div>
+      <section class="footer-navigation">
+        <h2 class="visually-hidden">Интернет-магазин гаджетов Девайс</h2>
+
+        <a class="navigation-logo-footer" href="#">
+          <img class="page-footer-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/icons/logo-footer.svg" width="145" height="36">
+        </a>
+
+        <div class="footer-address-service">
+          <address class="contact-address-footer">
+            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          </address>
+          <ul class="navigation-list-footer">
+            <li class="navigation-item-footer">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item-footer">
+              <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item-footer">
+              <a class="navigation-link" href="#">Конракты</a>
+            </li>
+          </ul>
+          <address class="contact-address">
+            <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          </address>
+        </div>
+      </section>
+
+      <section class="footer-social">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button telegram-link" href="#">
+
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button youtube-link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button twitter-link" href="#">
+
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </footer>
 </body>
 </html>
