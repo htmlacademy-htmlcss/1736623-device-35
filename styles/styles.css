@@ -61,6 +61,7 @@ body{
 }
 .navigation-logo{
   margin: 20px 0 21px 0;
+  width: 145px;
 }
 .navigation-logo:hover .page-header-logo{
   opacity: 0.6;
@@ -772,7 +773,7 @@ body{
   flex-direction: column;
 }
 .newsletter-subscription-form{
-  width: 810px;
+
 }
 
 .send-button{
@@ -813,7 +814,7 @@ body{
 }
 .this-is-free{
   padding-top: 14px;
-  margin-left: 221px;
+  margin-left: auto;
   position: relative;
 }
 .this-is-free::before{
@@ -1144,6 +1145,9 @@ line-height: 20px;
   padding-left: 37px;
   height: 20px;
 }
+.control:hover{
+  cursor: pointers;
+}
 .control-input[type="checkbox"]:checked + .control-mark{
   border-color: #000;
 }
@@ -1276,6 +1280,57 @@ line-height: 20px;
 }
 .product-image{
   padding-bottom: 23px;
+  position: relative;
+}
+.product-link:hover + .more-about-product{
+  opacity: 1;
+}
+.more-about-product{
+  position: absolute;
+  width: 210px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 10px;
+  z-index: 1;
+  top: 180px;
+  left: 75px;
+  opacity: 0;
+}
+.more-about-product:hover{
+  height: 20px;
+  opacity: 1;
+}
+.more-about-product:active::before{
+  background-color: #ffc700;
+}
+.more-about-product::before{
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+  top: 10px;
+  left: 5px;
+}
+
+.more-about-product::after{
+  position: absolute;
+  content: "";
+  background: rgba(240, 240, 240, 0.8);
+  width: 360px;
+  height: 380px;
+  top: -180px;
+  left: -75px;
+  opacity: 1;
+  z-index: -2;
 }
 .new-item::before{
   content: url("../images/icons/new.svg");
