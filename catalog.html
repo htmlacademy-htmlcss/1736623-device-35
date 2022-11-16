@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <title>Интернет-магазин гаджетов "Девайс"</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин гаджетов Девайс</h1>
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/icons/main-logo.svg" width="145" height="36">
+        <img class="page-header-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/content/main-logo.svg" width="145" height="36">
       </a>
       <div class="search-user-menu">
         <form class="site-search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -39,13 +40,13 @@
           Каталог товаров
         </a>
         <ul class="navigation-list delivery-guarantees-contacts">
-          <li class="navigation-item">
+          <li class="navigation-item-services">
             <a class="navigation-link" href="#">Доставка</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-services">
             <a class="navigation-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-services">
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
@@ -62,10 +63,10 @@
             <a class="path-link" href="index.html">Главная</a>
           </li>
           <li class="path-item">
-            <a class="path-link">Каталог товаров</a>
+            <a class="path-link" href="#">Каталог товаров</a>
           </li>
           <li class="path-item">
-            <a class="path-link">Моноподы для селфи</a>
+            <a class="path-link" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
@@ -81,8 +82,8 @@
                   Стоимость
                 </legend>
                 <div class="prise-filter-circle prise-filter-line">
-                  <button class="range-bar" type="submit"></button>
-                  <button class="range-bar" type="submit"></button>
+                  <button class="range-bar" type="submit"><span class="visually-hidden">от.</span></button>
+                  <button class="range-bar" type="submit"><span class="visually-hidden">до.</span></button>
                 </div>
 
                 <div class="range-wrapper-inputs">
@@ -190,7 +191,7 @@
                 </a>
               </li>
               <li class="product-item">
-                <a class="product-link" href="#">
+                <a class="product-link  new-item" href="#">
                   <img class="product-image" src="images/content/product-2-catalog.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                   <div class="description-item">
                     <p class="product-title">Профессиональная<br> селфи-палка</p>
@@ -221,33 +222,31 @@
 
           <div class="more-content-buttons">
             <button type="button" class="show-more-product">Загрузить ещё</button>
-            <ul class="pagination">
-              <li class="pagination-item-catalog">
-                <a class="pagination-link pagination-prev pagination-disabled">
-                  <span class="button-title">Назад</span>
-                </a>
-              </li>
-              <li class="pagination-item-catalog pagination-item-number">
-                <a class="pagination-link-number pagination-current">1</a>
-              </li>
-              <li class="pagination-item-catalog pagination-item-number">
-                <a class="pagination-link-number" href="#">2</a>
-              </li>
-              <li class="pagination-item-catalog pagination-item-number">
-                <a class="pagination-link-number" href="#">3</a>
-              </li>
-              <li class="pagination-item-catalog pagination-item-number">
-                <a class="pagination-link-number pagination-item-number" href="#">...</a>
-              </li>
-              <li class="pagination-item-catalog pagination-item-number">
-                <a class="pagination-link-number" href="#">15</a>
-              </li>
-              <li class="pagination-item-catalog">
-                <a class="pagination-link pagination-next" href="#">
-                  <span class="button-title">Вперёд</span>
-                </a>
-              </li>
-            </ul>
+            <div class="pagination-battons">
+              <a class="pagination-link pagination-prev pagination-disabled">
+                <span class="button-title">Назад</span>
+              </a>
+              <ul class="pagination">
+                <li class="pagination-item-catalog pagination-item-number">
+                  <a class="pagination-link-number pagination-current">1</a>
+                </li>
+                <li class="pagination-item-catalog pagination-item-number">
+                  <a class="pagination-link-number" href="#">2</a>
+                </li>
+                <li class="pagination-item-catalog pagination-item-number">
+                  <a class="pagination-link-number" href="#">3</a>
+                </li>
+                <li class="pagination-item-catalog pagination-item-number">
+                  <a class="pagination-link-number" href="#">...</a>
+                </li>
+                <li class="pagination-item-catalog pagination-item-number">
+                  <a class="pagination-link-number" href="#">15</a>
+                </li>
+              </ul>
+              <a class="pagination-link pagination-next" href="#">
+                <span class="button-title">Вперёд</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -260,7 +259,7 @@
         <h2 class="visually-hidden">Интернет-магазин гаджетов Девайс</h2>
 
         <a class="navigation-logo-footer" href="index.html">
-          <img class="page-footer-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/icons/logo-footer.svg" width="145" height="36">
+          <img class="page-footer-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/content/logo-footer.svg" width="145" height="36">
         </a>
 
         <div class="footer-address-service">
