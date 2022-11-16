@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>Интернет-магазин гаджетов "Девайс"</title>
   <link rel="stylesheet" href="styles/styles.css">
-
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 <body>
@@ -38,13 +37,13 @@
         <ul class="basket-list">
           <li class="basket-item">
             <img class="image-item" width="39" height="43" alt="Любительская селфи-палка" src="images/content/product-1-catalog.jpg">
-            <p class="item-name">Любительская <br>селфи-палка</p>
-            <button class="delete-item"></button>
+            <p class="item-name">Любительская<br> селфи-палка</p>
+            <button class="delete-item"><span class="visually-hidden">удалить из корзины.</span></button>
           </li>
           <li class="basket-item">
             <img class="image-item" width="39" height="43" alt="Профессиональная селфи-палка" src="images/content/product-2-catalog.jpg">
             <p class="item-name">Профессиональная<br> селфи-палка</p>
-            <button class="delete-item"></button>
+            <button class="delete-item"><span class="visually-hidden">удалить из корзины.</span></button>
           </li>
         </ul>
         <div class="bascet-count-items-sum">
@@ -233,7 +232,7 @@
         <div class="subscription-text">
           <h2 class="newsletter-subscription-titel">Подпишитесь на рассылку</h2>
           <p class="description-subscription">
-            Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+            Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
           </p>
         </div>
         <div class="subscription-form">
@@ -306,31 +305,31 @@
   <div class="modal-container">
     <div class="modal modal-delivery">
       <h1 class="delivery-title-modal">Доставка под заказ</h1>
-      <button class="close-window" type="submit"></button>
+      <button class="close-window" type="submit"><span class="visually-hidden">закрыть окно.</span></button>
       <div class="name-email-input">
-        <form class="name-input">
-          <p class="input-title">Ваше имя:</p>
-          <label class="text-input-line"></label>
-          <input type="text" class="text-input" name="site-text-input" placeholder="Введите имя">
+        <form class="name-input-form">
+          <label class="input-title" for="text-inpet-line">Ваше имя:</label>
+          <input type="text" class="text-input" name="site-text-input" placeholder="Введите имя" id="text-input-line" required>
         </form>
-        <form class="email-input-input">
-          <p class="input-title">Ваш e-mail:</p>
-          <label class="email-input-line"></label>
-          <input type="email" class="email-input" name="site-email-input" placeholder="почта">
+        <form class="email-input-form">
+          <label class="input-title" for="email-input-line">Ваш e-mail:</label>
+          <input type="email" class="email-input" name="site-email-input" placeholder="почта" id="email-input-line" required>
           <p class="input-warning">Забавный у вас адрес</p>
         </form>
       </div>
       <div class="delivery-wishes-count">
         <form class="delivery-wishes">
-          <p class="input-title">Что нужно привезти:</p>
-          <input type="text" class="delivery-wish" name="site-text-input" placeholder="В свободной форме">
+          <label class="input-title" for="delivery-line">Что нужно привезти:</label>
+          <input type="text" class="delivery-wish" name="site-text-input" placeholder="В свободной форме" id="delivery-line" required>
         </form>
-        <div>
+        <div class="amount-bar">
           <p class="input-title amout-info">Количество:</p>
           <ul class="counter-list">
-            <li class="counter-item"><button class="button-amout decrease"></button></li>
-            <li class="counter-item"><label class="amout">1</label></li>
-            <li class="counter-item"><button class="button-amout increase"></button></li>
+            <li class="counter-item"><button class="button-amout decrease"><span class="visually-hidden">увеличить.</span></button></li>
+            <li class="counter-item"><label class="visually-hidden">количество.</label>
+              <input type="number" class="amout amout-line" name="amout-item" placeholder="1" id="delivery-line" required>
+            </li>
+            <li class="counter-item"><button class="button-amout increase"><span class="visually-hidden">уменьшить.</span></button></li>
           </ul>
         </div>
       </div>
