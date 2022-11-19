@@ -15,8 +15,8 @@
       </a>
       <div class="search-user-menu">
         <form class="site-search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="search-line"><input type="search" class="search-input" name="site-search" placeholder="Поиск по сайту">
-          </label>
+          <label class="search-line" for="search-line-input">Поиск по сайту</label>
+          <input type="search" class="search-input" name="site-search" id="search-line-input" placeholder="Поиск по сайту" required>
           <button class="button-search-on-site" type="submit"><span class="button-search-text">Найти</span></button>
         </form>
 
@@ -90,9 +90,7 @@
 
   <main class="main-index">
     <section class="slider-dron">
-      <div class="slider">
-        <h2 class="visually-hidden">Квадракоптер и его описание</h2>
-        <img class="slider-image" src="images/content/drone-slider-1.png" alt="Летающий дрон с камерой" width="560" height="560">
+      <div class="slider-buttons">
         <button class="slider-button slider-prev" type="button">
           <svg width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000"/></svg>
           <span class="visually-hidden slider-prev">Предыдущее фото</span>
@@ -129,40 +127,112 @@
         </ul>
       </div>
 
-      <div class="slider-drone-discription">
-        <p class="slider-tagline">Порхает как бабочка,  жалит как пчела!</p>
-        <p class="drone-discription">
-          Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-        </p>
+      <ul class="slider-content">
+        <li class="slider-content-item quadro">
+          <div class="slider">
+            <h2 class="visually-hidden">Квадракоптер и его описание</h2>
+            <img class="slider-image" src="images/content/drone-slider-1.png" alt="Летающий дрон с камерой" width="560" height="560">
+          </div>
 
-        <a href="#" class="more-about">Подробнее</a>
+          <div class="slider-drone-discription">
+            <p class="slider-tagline">Порхает как бабочка,  жалит как пчела!</p>
+            <p class="drone-discription">
+              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            </p>
 
-        <ul class="list-info">
-          <li class="item-info">
-            <p class="fly-range">800 м</p>
-            <p class="info-text-slider">
-              Дальность полета
+            <a href="#" class="more-about">Подробнее</a>
+
+            <ul class="list-info">
+              <li class="item-info">
+                <p class="fly-range">800 м</p>
+                <p class="info-text-slider">
+                  Дальность полета
+                </p>
+              </li>
+              <li class="item-info">
+                <p class="damage-radius">50 м</p>
+                <p class="info-text-slider">
+                  Радиус поражения
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="slider-content-item bracelet">
+          <div class="slider">
+            <h2 class="visually-hidden">браслет и его описание</h2>
+            <img class="slider-image" src="images/content/slider-bracelet.png" alt="Летающий дрон с камерой" width="560" height="560">
+          </div>
+
+          <div class="slider-drone-discription">
+            <p class="slider-tagline">Худеем правильно!</p>
+            <p class="drone-discription">
+              Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
-          </li>
-          <li class="item-info">
-            <p class="damage-radius">50 м</p>
-            <p class="info-text-slider">
-              Радиус поражения
+
+            <a href="#" class="more-about">Подробнее</a>
+
+            <ul class="list-info">
+              <li class="item-info">
+                <p class="fly-range">48 часов</p>
+                <p class="info-text-slider">
+                  Без подзарядки
+                </p>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+
+        <li class="slider-content-item self-stick">
+          <div class="slider">
+            <h2 class="visually-hidden">селфи-палка и её описание</h2>
+            <img class="slider-image" src="images/content/slider-self-stick.png" alt="Летающий дрон с камерой" width="560" height="560">
+          </div>
+
+          <div class="slider-drone-discription">
+            <p class="slider-tagline">Делай селфи, как Бен Стиллер!</p>
+            <p class="drone-discription">
+              Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
-          </li>
-        </ul>
-      </div>
+
+            <a href="#" class="more-about">Подробнее</a>
+
+            <ul class="list-info">
+              <li class="item-info">
+                <p class="fly-range">8,5 м</p>
+                <p class="info-text-slider">
+                  Длина палки
+                </p>
+              </li>
+              <li class="item-info">
+                <p class="damage-radius">5 кг</p>
+                <p class="info-text-slider">
+                  Вес палки
+                </p>
+              </li>
+              <li class="item-info">
+                <p class="damage-radius">Карбон</p>
+                <p class="info-text-slider">
+                  Материал
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section class="category-of-items">
       <h2 class="visually-hidden">Категории товара</h2>
       <ul class="items-category">
-        <li class="item-category virt-reality"><a href="#" class="category-link">Виртуальная реальность</a></li>
-        <li class="item-category selfie-monopods"><a href="catalog.html" class="category-link">Моноподы для селфи</a></li>
-        <li class="item-category action-cameras"><a href="#" class="category-link">Экшн-камеры</a></li>
-        <li class="item-category fitnes-bracelet"><a href="#" class="category-link">Фитнес-браслеты</a></li>
-        <li class="item-category smart-watch"><a href="#" class="category-link">Умные часы</a></li>
-        <li class="item-category quadrocopters"><a href="#" class="category-link">Квадрокоптеры</a></li>
+        <li class="item-category"><a href="#" class="category-link virt-reality">Виртуальная реальность</a></li>
+        <li class="item-category"><a href="catalog.html" class="category-link selfie-monopods">Моноподы для селфи</a></li>
+        <li class="item-category"><a href="#" class="category-link action-cameras">Экшн-камеры</a></li>
+        <li class="item-category"><a href="#" class="category-link fitnes-bracelet">Фитнес-браслеты</a></li>
+        <li class="item-category"><a href="#" class="category-link smart-watch">Умные часы</a></li>
+        <li class="item-category"><a href="#" class="category-link quadrocopters">Квадрокоптеры</a></li>
       </ul>
     </section>
 
@@ -189,7 +259,7 @@
     <article class="delivery-link">
       <div class="button-delivery">
         <h2 class="visually-hidden">кнопка - доставим редкий товар под заказ</h2>
-        <a class="delivery-button">доставим редкий товар под заказ</a>
+        <a class="delivery-button" href="#">доставим редкий товар под заказ</a>
       </div>
       <div class="delivery-window">
 
@@ -284,17 +354,17 @@
         <h2 class="visually-hidden">Наши социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button telegram-link" href="#">
+            <a class="button telegram-link" href="tg://resolve?domain=htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button youtube-link" href="#">
+            <a class="button youtube-link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button twitter-link" href="#">
+            <a class="button twitter-link" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
@@ -305,31 +375,31 @@
   <div class="modal-container">
     <div class="modal modal-delivery">
       <h1 class="delivery-title-modal">Доставка под заказ</h1>
-      <button class="close-window" type="submit"><span class="visually-hidden">закрыть окно.</span></button>
+      <button class="close-window" type="button"><span class="visually-hidden">закрыть окно.</span></button>
       <div class="name-email-input">
-        <form class="name-input-form">
-          <label class="input-title" for="text-inpet-line">Ваше имя:</label>
+        <form class="name-input-form" action="https://echo.htmlacademy.ru/">
+          <label class="input-title" for="text-input-line">Ваше имя:</label>
           <input type="text" class="text-input" name="site-text-input" placeholder="Введите имя" id="text-input-line" required>
         </form>
-        <form class="email-input-form">
+        <form class="email-input-form" action="https://echo.htmlacademy.ru/">
           <label class="input-title" for="email-input-line">Ваш e-mail:</label>
           <input type="email" class="email-input" name="site-email-input" placeholder="почта" id="email-input-line" required>
           <p class="input-warning">Забавный у вас адрес</p>
         </form>
       </div>
       <div class="delivery-wishes-count">
-        <form class="delivery-wishes">
+        <form class="delivery-wishes" action="https://echo.htmlacademy.ru/">
           <label class="input-title" for="delivery-line">Что нужно привезти:</label>
           <input type="text" class="delivery-wish" name="site-text-input" placeholder="В свободной форме" id="delivery-line" required>
         </form>
         <div class="amount-bar">
           <p class="input-title amout-info">Количество:</p>
           <ul class="counter-list">
-            <li class="counter-item"><button class="button-amout decrease"><span class="visually-hidden">увеличить.</span></button></li>
-            <li class="counter-item"><label class="visually-hidden">количество.</label>
-              <input type="number" class="amout amout-line" name="amout-item" placeholder="1" id="delivery-line" required>
+            <li class="counter-item"><button class="button-amout decrease"><span class="visually-hidden">уменьшить.</span></button></li>
+            <li class="counter-item"><label class="visually-hidden" for="delivery-line-amount">количество.</label>
+              <input type="number" class="amout amout-line" name="amout-item" placeholder="1" id="delivery-line-amount" required>
             </li>
-            <li class="counter-item"><button class="button-amout increase"><span class="visually-hidden">уменьшить.</span></button></li>
+            <li class="counter-item"><button class="button-amout increase"><span class="visually-hidden">увеличить.</span></button></li>
           </ul>
         </div>
       </div>
