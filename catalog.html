@@ -8,15 +8,14 @@
 </head>
 <body>
   <header class="page-header">
-    <h1 class="visually-hidden">Интернет-магазин гаджетов Девайс</h1>
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" alt="Логотип Интернет-магазин гаджетов Девайс." src="images/content/main-logo.svg" width="145" height="36">
       </a>
       <div class="search-user-menu">
         <form class="site-search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="search-line"><input type="search" class="search-input" name="site-search" placeholder="Текст поиска">
-          </label>
+          <label class="search-line" for="search-line-input">Поиск по сайту</label>
+          <input type="search" class="search-input" name="site-search" id="search-line-input" placeholder="Поиск по сайту" required>
           <button class="button-search-on-site" type="submit"><span class="button-search-text">Найти</span></button>
         </form>
         <ul class="navigation-list navigation-user">
@@ -176,8 +175,8 @@
                 </select>
               </div>
               <div class="arrows">
-                <svg class="arrow arrow-up" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 0 5.5 10H.5" fill="#000"/></svg>
-                <svg class="arrow arrow-down" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10 .5 0h11" fill="#000"/></svg>
+                <a class="arrow-sorting" href="#"><span class="visually-hidden">стелка сортировки вверх.</span><svg class="arrow arrow-up" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 0 5.5 10H.5" fill="#000"/></svg></a>
+                <a class="arrow-sorting" href="#"><span class="visually-hidden">стелка сортировки вниз.</span><svg class="arrow arrow-down" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10 .5 0h11" fill="#000"/></svg></a>
               </div>
             </div>
             <ul class="product-list">
@@ -188,8 +187,8 @@
                     <p class="product-title">Любительская<br> селфи-палка</p>
                     <p class="product-card-price">500 ₽</p>
                   </div>
-                  <a href="#" class="more-about-product">Подробнее</a>
                 </a>
+                <a href="#" class="more-about-product">Подробнее</a>
               </li>
               <li class="product-item">
                 <a class="product-link  new-item" href="#">
@@ -198,8 +197,8 @@
                     <p class="product-title">Профессиональная<br> селфи-палка</p>
                     <p class="product-card-price">1 500 ₽</p>
                   </div>
-                  <a href="#" class="more-about-product">Подробнее</a>
                 </a>
+                <a href="#" class="more-about-product">Подробнее</a>
               </li>
               <li class="product-item">
                 <a class="product-link" href="#">
@@ -208,8 +207,8 @@
                     <p class="product-title">Непотопляемая<br> селфи-палка</p>
                     <p class="product-card-price">2 500 ₽</p>
                   </div>
-                  <a href="#" class="more-about-product">Подробнее</a>
                 </a>
+                <a href="#" class="more-about-product">Подробнее</a>
               </li>
               <li class="product-item">
                 <a class="product-link" href="#">
@@ -218,14 +217,14 @@
                     <p class="product-title">Селфи-палка «Следуй за мной»</p>
                     <p class="product-card-price">1 500 ₽</p>
                   </div>
-                  <a href="#" class="more-about-product">Подробнее</a>
                 </a>
+                <a href="#" class="more-about-product">Подробнее</a>
               </li>
             </ul>
           </div>
 
           <div class="more-content-buttons">
-            <button type="button" class="show-more-product">Загрузить ещё</button>
+            <a href="#" class="show-more-product">Загрузить ещё</a>
             <div class="pagination-battons">
               <a class="pagination-link pagination-prev pagination-disabled">
                 <span class="button-title">Назад</span>
