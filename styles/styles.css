@@ -98,11 +98,6 @@ body{
   height: 40px;
   position: relative;
 }
-.search-line{
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
 .site-search-form::before{
   content: url("../images/icons/search-magnifier.svg");
   position: absolute;
@@ -1529,13 +1524,13 @@ line-height: 20px;
   opacity: 0.6;
   cursor: pointer;
 }
-.select-control:focus {
+.select-control:active {
   border: none;
   cursor: pointer;
 }
 
 .select-control:focus {
-  outline:none;
+  outline: 2px solid #AF4FFF;
 }
 .show-button{
   font-family: 'Raleway', sans-serif;
@@ -1751,7 +1746,7 @@ line-height: 20px;
   position: fixed;
   top: 0;
   left: 0;
-  display: none; /*flex*//*none*/
+  display: flex; /*flex*//*none*/
   width: 100%;
   height: 100%;
   background: rgba(240, 240, 240, 0.9);
@@ -1781,11 +1776,15 @@ line-height: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
+  border: none;
+  padding: 0;
 }
 .name-email-input{
   display: flex;
   justify-content: space-between;
   margin-bottom: 42px;
+  border: none;
+
 }
 .text-input{
   width: 320px;

@@ -15,7 +15,7 @@
       </a>
       <div class="search-user-menu">
         <form class="site-search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="search-line" for="search-line-input">Поиск по сайту</label>
+          <label class="search-line" for="search-line-input"><span class="visually-hidden">Поиск по сайту</span></label>
           <input type="search" class="search-input" name="site-search" id="search-line-input" placeholder="Поиск по сайту" required>
           <button class="button-search-on-site" type="submit"><span class="button-search-text">Найти</span></button>
         </form>
@@ -307,7 +307,7 @@
         </div>
         <div class="subscription-form">
           <form class="newsletter-subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="send-field">
+            <label class="send-field"><span class="visually-hidden"></span>
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required/>
             </label>
             <button class="newsletter-button" type="submit">
@@ -376,34 +376,36 @@
     <div class="modal modal-delivery">
       <h1 class="delivery-title-modal">Доставка под заказ</h1>
       <button class="close-window" type="button"><span class="visually-hidden">закрыть окно.</span></button>
-      <div class="name-email-input">
-        <form class="name-input-form" action="https://echo.htmlacademy.ru/">
-          <label class="input-title" for="text-input-line">Ваше имя:</label>
-          <input type="text" class="text-input" name="site-text-input" placeholder="Введите имя" id="text-input-line" required>
-        </form>
-        <form class="email-input-form" action="https://echo.htmlacademy.ru/">
-          <label class="input-title" for="email-input-line">Ваш e-mail:</label>
-          <input type="email" class="email-input" name="site-email-input" placeholder="почта" id="email-input-line" required>
-          <p class="input-warning">Забавный у вас адрес</p>
-        </form>
-      </div>
-      <div class="delivery-wishes-count">
-        <form class="delivery-wishes" action="https://echo.htmlacademy.ru/">
-          <label class="input-title" for="delivery-line">Что нужно привезти:</label>
-          <input type="text" class="delivery-wish" name="site-text-input" placeholder="В свободной форме" id="delivery-line" required>
-        </form>
-        <div class="amount-bar">
-          <p class="input-title amout-info">Количество:</p>
-          <ul class="counter-list">
-            <li class="counter-item"><button class="button-amout decrease"><span class="visually-hidden">уменьшить.</span></button></li>
-            <li class="counter-item"><label class="visually-hidden" for="delivery-line-amount">количество.</label>
-              <input type="number" class="amout amout-line" name="amout-item" placeholder="1" id="delivery-line-amount" required>
-            </li>
-            <li class="counter-item"><button class="button-amout increase"><span class="visually-hidden">увеличить.</span></button></li>
-          </ul>
+      <form class="" action="https://echo.htmlacademy.ru/">
+        <div class="name-email-input">
+          <fieldset class="name-input-form">
+            <label class="input-title" for="text-input-line">Ваше имя:</label>
+            <input type="text" class="text-input" name="site-text-input" placeholder="Введите имя" id="text-input-line" required>
+          </fieldset>
+          <fieldset class="email-input-form">
+            <label class="input-title" for="email-input-line">Ваш e-mail:</label>
+            <input type="email" class="email-input" name="site-email-input" placeholder="почта" id="email-input-line" required>
+            <p class="input-warning">Забавный у вас адрес</p>
+          </fieldset>
         </div>
-      </div>
-      <button class="send-form" type="submit">Отправить</button>
+        <div class="delivery-wishes-count">
+          <fieldset class="delivery-wishes">
+            <label class="input-title" for="delivery-line">Что нужно привезти:</label>
+            <input type="text" class="delivery-wish" name="site-text-input" placeholder="В свободной форме" id="delivery-line" required>
+          </fieldset>
+          <div class="amount-bar">
+            <p class="input-title amout-info">Количество:</p>
+            <ul class="counter-list">
+              <li class="counter-item"><button class="button-amout decrease"><span class="visually-hidden">уменьшить.</span></button></li>
+              <li class="counter-item"><label class="visually-hidden" for="delivery-line-amount">количество.</label>
+                <input type="number" class="amout amout-line" name="amout-item" placeholder="1" id="delivery-line-amount" required>
+              </li>
+              <li class="counter-item"><button class="button-amout increase"><span class="visually-hidden">увеличить.</span></button></li>
+            </ul>
+          </div>
+        </div>
+        <button class="send-form" type="submit">Отправить</button>
+      </form>
     </div>
   </div>
 </body>
